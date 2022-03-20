@@ -9,9 +9,9 @@ Touch mode uses a very robust and state-of-the-art tracker designed by Kaihua Zh
 This mode uses background subtraction techniques to locate moving objects in the iPhone camera's view. There is also a mask version of this mode to see where exactly foreground objects appear on top of the background model.
 
 ## Requirements
- - iOS 7+
- - Xcode 8.0+
- - Swift 3.0+
+ - iOS 15.2+
+ - Xcode 13.0+
+ - Swift 5.0+
  - OpenCV framework 2.4.13
 
 ## Demos
