@@ -1,0 +1,16 @@
+//
+//  Real-time-Tracking-iOS-Prefix.pch
+//  Real-time-Tracking-iOS
+//
+//  Created by Justin Haupt on 3/20/22.
+//  Copyright © 2022 justinh5. All rights reserved.
+//
+
+#ifndef Real_time_Tracking_iOS_Prefix_pch
+#define Real_time_Tracking_iOS_Prefix_pch
+
+#ifdef __cplusplus
+#import <opencv2/opencv.hpp>
+#endif
+
+#endif /* Real_time_Tracking_iOS_Prefix_pch */

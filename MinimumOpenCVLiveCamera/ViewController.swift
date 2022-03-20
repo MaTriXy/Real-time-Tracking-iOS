@@ -65,26 +65,26 @@ class ViewController: UIViewController {
     
     func showAlertMenu() {
         
-        let alertController = UIAlertController(title: "Mode", message: "Choose a mode", preferredStyle: UIAlertControllerStyle.alert)
+        let alertController = UIAlertController(title: "Mode", message: "Choose a mode", preferredStyle: UIAlertController.Style.alert)
         
-        let touch = UIAlertAction(title: "touch tracking", style: UIAlertActionStyle.default) {
+        let touch = UIAlertAction(title: "touch tracking", style: UIAlertAction.Style.default) {
             (result : UIAlertAction) -> Void in
             self.wrapper.switchMode(1)
             self.wrapper.start()
         }
-        let objectDet = UIAlertAction(title: "object detection", style: UIAlertActionStyle.default) {
+        let objectDet = UIAlertAction(title: "object detection", style: UIAlertAction.Style.default) {
             (result : UIAlertAction) -> Void in
             self.showAlertMsg(mode: 2)
         }
-        let objectDetMask = UIAlertAction(title: "object detection mask", style: UIAlertActionStyle.default) {
+        let objectDetMask = UIAlertAction(title: "object detection mask", style: UIAlertAction.Style.default) {
             (result : UIAlertAction) -> Void in
             self.showAlertMsg(mode: 3)
         }
-        let opticalFlow = UIAlertAction(title: "optical flow", style: UIAlertActionStyle.default) {
+        let opticalFlow = UIAlertAction(title: "optical flow", style: UIAlertAction.Style.default) {
             (result : UIAlertAction) -> Void in
             self.showAlertMsg(mode: 4)
         }
-        let cancel = UIAlertAction(title: "cancel", style: UIAlertActionStyle.default) {
+        let cancel = UIAlertAction(title: "cancel", style: UIAlertAction.Style.default) {
             (result : UIAlertAction) -> Void in
             self.wrapper.start()
         }
@@ -99,9 +99,9 @@ class ViewController: UIViewController {
     
     func showAlertMsg(mode: integer_t) {
         
-        let alertController = UIAlertController(title: "Detection Mode", message: "Keep the camera still! Place your device on a steady surface.", preferredStyle: UIAlertControllerStyle.alert)
+        let alertController = UIAlertController(title: "Detection Mode", message: "Keep the camera still! Place your device on a steady surface.", preferredStyle: UIAlertController.Style.alert)
         
-        let okAction = UIAlertAction(title: "Got it!", style: UIAlertActionStyle.default) {
+        let okAction = UIAlertAction(title: "Got it!", style: UIAlertAction.Style.default) {
             (result : UIAlertAction) -> Void in
             self.wrapper.switchMode(mode)
             self.wrapper.start()

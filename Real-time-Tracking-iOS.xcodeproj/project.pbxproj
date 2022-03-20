@@ -3,12 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A84914E91E64F950001BF88B /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A84914E81E64F950001BF88B /* opencv2.framework */; };
+		A811721A27E7D0C5008F3D8D /* opencv2-3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A811721927E7D0C5008F3D8D /* opencv2-3.framework */; };
 		A84914EC1E64FE19001BF88B /* CompressiveTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A84914EA1E64FE19001BF88B /* CompressiveTracker.cpp */; };
+		A8B9958827DF119B0057B0F6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8B9958727DF119B0057B0F6 /* CoreGraphics.framework */; };
+		A8B9958A27DF11CA0057B0F6 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8B9958927DF11CA0057B0F6 /* CoreFoundation.framework */; };
 		E979E7D81BEB59710061BC68 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E979E7D71BEB59710061BC68 /* AVFoundation.framework */; };
 		E979E7DA1BEB59740061BC68 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E979E7D91BEB59740061BC68 /* Accelerate.framework */; };
 		E979E7DC1BEB597D0061BC68 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E979E7DB1BEB597D0061BC68 /* CoreMedia.framework */; };
@@ -17,16 +19,19 @@
 		E979E80A1BEB66DA0061BC68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E979E7FA1BEB66DA0061BC68 /* LaunchScreen.storyboard */; };
 		E979E80B1BEB66DA0061BC68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E979E7FC1BEB66DA0061BC68 /* Main.storyboard */; };
 		E979E80C1BEB66DA0061BC68 /* FrameProcessor.mm in Sources */ = {isa = PBXBuildFile; fileRef = E979E7FF1BEB66DA0061BC68 /* FrameProcessor.mm */; };
-		E979E80D1BEB66DA0061BC68 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E979E8001BEB66DA0061BC68 /* Info.plist */; };
 		E979E80F1BEB66DA0061BC68 /* VideoSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = E979E8041BEB66DA0061BC68 /* VideoSource.mm */; };
 		E979E8101BEB66DA0061BC68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E979E8051BEB66DA0061BC68 /* ViewController.swift */; };
 		E979E8111BEB66DA0061BC68 /* Wrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = E979E8071BEB66DA0061BC68 /* Wrapper.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A84914E81E64F950001BF88B /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		A811721927E7D0C5008F3D8D /* opencv2-3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "opencv2-3.framework"; sourceTree = "<group>"; };
 		A84914EA1E64FE19001BF88B /* CompressiveTracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CompressiveTracker.cpp; path = MinimumOpenCVLiveCamera/CompressiveTracker.cpp; sourceTree = SOURCE_ROOT; };
 		A84914EB1E64FE19001BF88B /* CompressiveTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CompressiveTracker.h; path = MinimumOpenCVLiveCamera/CompressiveTracker.h; sourceTree = SOURCE_ROOT; };
+		A8897B1127E7B66D005CEF94 /* Real-time-Tracking-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Real-time-Tracking-iOS-Prefix.pch"; path = "MinimumOpenCVLiveCamera/Real-time-Tracking-iOS-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		A8B9958527DF11900057B0F6 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		A8B9958727DF119B0057B0F6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A8B9958927DF11CA0057B0F6 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		E979E7B81BEB4D6F0061BC68 /* Real-time-Tracking-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Real-time-Tracking-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E979E7D71BEB59710061BC68 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E979E7D91BEB59740061BC68 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
@@ -51,9 +56,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A811721A27E7D0C5008F3D8D /* opencv2-3.framework in Frameworks */,
+				A8B9958A27DF11CA0057B0F6 /* CoreFoundation.framework in Frameworks */,
+				A8B9958827DF119B0057B0F6 /* CoreGraphics.framework in Frameworks */,
 				E979E7DC1BEB597D0061BC68 /* CoreMedia.framework in Frameworks */,
 				E979E7DA1BEB59740061BC68 /* Accelerate.framework in Frameworks */,
-				A84914E91E64F950001BF88B /* opencv2.framework in Frameworks */,
 				E979E7D81BEB59710061BC68 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,15 +68,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A8B9958227DF113E0057B0F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A811721927E7D0C5008F3D8D /* opencv2-3.framework */,
+				A8B9958927DF11CA0057B0F6 /* CoreFoundation.framework */,
+				A8B9958727DF119B0057B0F6 /* CoreGraphics.framework */,
+				A8B9958527DF11900057B0F6 /* AssetsLibrary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E979E7AF1BEB4D6F0061BC68 = {
 			isa = PBXGroup;
 			children = (
-				A84914E81E64F950001BF88B /* opencv2.framework */,
 				E979E7DB1BEB597D0061BC68 /* CoreMedia.framework */,
 				E979E7D91BEB59740061BC68 /* Accelerate.framework */,
 				E979E7D71BEB59710061BC68 /* AVFoundation.framework */,
 				E979E7BA1BEB4D6F0061BC68 /* Real-time-Tracking-iOS */,
 				E979E7B91BEB4D6F0061BC68 /* Products */,
+				A8B9958227DF113E0057B0F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +116,7 @@
 				E9AE913E1BFDC25700C25B99 /* MinimumOpenCVLiveCamera-Bridging-Header.h */,
 				A84914EB1E64FE19001BF88B /* CompressiveTracker.h */,
 				A84914EA1E64FE19001BF88B /* CompressiveTracker.cpp */,
+				A8897B1127E7B66D005CEF94 /* Real-time-Tracking-iOS-Prefix.pch */,
 			);
 			name = "Real-time-Tracking-iOS";
 			path = DMAR;
@@ -140,8 +159,8 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0710;
-				ORGANIZATIONNAME = akira108;
+				LastUpgradeCheck = 1320;
+				ORGANIZATIONNAME = justinh5;
 				TargetAttributes = {
 					E979E7B71BEB4D6F0061BC68 = {
 						CreatedOnToolsVersion = 7.1;
@@ -151,8 +170,8 @@
 				};
 			};
 			buildConfigurationList = E979E7B31BEB4D6F0061BC68 /* Build configuration list for PBXProject "Real-time-Tracking-iOS" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -173,7 +192,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E979E80D1BEB66DA0061BC68 /* Info.plist in Resources */,
 				E979E80B1BEB66DA0061BC68 /* Main.storyboard in Resources */,
 				E979E8091BEB66DA0061BC68 /* Assets.xcassets in Resources */,
 				E979E80A1BEB66DA0061BC68 /* LaunchScreen.storyboard in Resources */,
@@ -222,17 +240,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -240,6 +270,10 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Frameworks/**",
+					"$(PROJECT_DIR)/opencv2-3.framework/**",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -254,11 +288,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -266,17 +306,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -284,6 +336,10 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Frameworks/**",
+					"$(PROJECT_DIR)/opencv2-3.framework/**",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -292,9 +348,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -309,14 +373,23 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/MinimumOpenCVLiveCamera",
 					"$(PROJECT_DIR)",
+					/usr/local/Frameworks,
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = MinimumOpenCVLiveCamera/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/opencv/2.4.13.2/lib,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = justinh5;
 				PRODUCT_NAME = "Real-time-Tracking-iOS";
 				SWIFT_OBJC_BRIDGING_HEADER = "MinimumOpenCVLiveCamera/MinimumOpenCVLiveCamera-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -330,13 +403,22 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/MinimumOpenCVLiveCamera",
 					"$(PROJECT_DIR)",
+					/usr/local/Frameworks,
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = MinimumOpenCVLiveCamera/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/opencv/2.4.13.2/lib,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = justinh5;
 				PRODUCT_NAME = "Real-time-Tracking-iOS";
 				SWIFT_OBJC_BRIDGING_HEADER = "MinimumOpenCVLiveCamera/MinimumOpenCVLiveCamera-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

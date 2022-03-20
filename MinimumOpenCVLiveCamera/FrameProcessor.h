@@ -31,7 +31,7 @@ using namespace cv;
     
     // MOG2 Background subtractor
     Mat fgMaskMOG2;
-    Ptr<BackgroundSubtractor> pMOG2;
+    cv::Ptr<BackgroundSubtractor> pMOG2;
     
     NSTimeInterval timeInSeconds;
     NSTimeInterval delay;
